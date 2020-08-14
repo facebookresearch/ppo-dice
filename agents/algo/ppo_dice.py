@@ -175,8 +175,7 @@ class PPO_DICE():
                 ###############
                 # train policy
                 ###############
-                if self.disc_train > 1:
-                    disc_loss = compute_disc_loss(self.discriminator, reinforce=self.discrete_actions)
+                disc_loss = compute_disc_loss(self.discriminator, reinforce=self.discrete_actions)
 
                 # get 90th percentile
                 n = adv_targ.shape[0]
