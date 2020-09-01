@@ -23,3 +23,4 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
   --num-env-steps 1000000 \
   --use-linear-lr-decay \
   --use-proper-time-limits
+  --disc-train 5
